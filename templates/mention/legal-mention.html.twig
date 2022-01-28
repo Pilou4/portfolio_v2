@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mentions légales{% endblock %}
+
+{% block body %}
+    <main class="mention">
+        <h1 class="mention__title">Mentions légales</h1>
+        <h2 class="mention__subtitle">éditeur du site</h2>
+        <p class="mention__text"> Le site ci présent est édité et développer par Frédéric Caffier.</p> 
+        <h2 class="mention__subtitle">Hébergement du site</h2>
+        <p class="mention__text">Le site est hébergé chez 1&1 IONOS, un hébergeur Allemand.</p> 
+        <h2 class="mention__subtitle">Responsable de publication</h2>
+        <ul class="mention__contact">
+            <li class="mention__contact__text__name">Frédéric CAFFIER</li>
+            <li class="mention__contact__text">5, place de l'église</li>
+            <li class="mention__contact__text">78490 Galluis</li>
+            <li class="mention__contact__text">06 19 84 74 29</li>
+            <li class="mention__contact__text">frederic.caffier@hotmail.com</li>
+        </ul>
+        
+        <h2 class="mention__subtitle">Déclaration CNIL</h2>
+        <p class="mention__text">Conformément aux dispositions de la loi 78-17 du 6 janvier 1978 modifiée,
+            l’Utilisateur dispose d’un droit d’accès, de modification et de suppression des informations 
+            collectées par le ce site.</p>
+        <section class="mention__links">
+            <a href="{{ path('homepage') }}" class="mention__link"> Retour à la page d'accueil</a>
+        </section>
+    </main>
+{% endblock %}

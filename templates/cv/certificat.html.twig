@@ -1,0 +1,354 @@
+{% extends 'base.html.twig' %}
+
+{% block url %}
+    <link rel="canonical" href="https://frederic-caffier.fr/cv/certificat" />
+{% endblock %}
+
+{% block metaTag %}
+    <meta name="description" content="portfolio développeur web junior Frédéric CAFFIER page des diplômes et certificats obtenues">
+{% endblock %}
+
+{% block title %}Cv{% endblock %}
+
+{% block body %}
+    <main class="certificats">
+        <h1 class="certificats__title">Diplômes et certificats</h1>
+        <section class="certificat">
+
+            <div class="certificat__card1">
+                <h2 class="certificat__subtitle">Titre professionnel</h2>
+                <img src="{{ asset('images/certificats/titre-pro.jpeg') }}" alt="titre professionnel" class="certificat__img">
+                <button class="certificat__button"><a href="#modal1" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+            </div>           
+            <aside id="modal1" class="modal" style="display:none;">
+                <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                    <h1 id="titlemodal">Titre professionnel</h1>
+                    <img src="{{ asset('images/certificats/titre-pro.jpeg') }}" alt="photo du titre professionnel" class="certificat__img">
+                </div>
+            </aside>
+
+            <div class="certificat__card2">
+                <h2 class="certificat__subtitle">Certificat opquast</h2>
+                <img src="{{ asset('images/certificats/opquast.jpg') }}" alt="Certificat opquast" class="certificat__img">
+                <button class="certificat__button"><a href="#modal2" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+            </div>
+            <aside id="modal2" class="modal" style="display:none;">
+                <div class="modal-wrapper js-modal-stop">
+                <button class="js-modal-close">Fermer</button>
+                    <h1 id="titlemodal">Certificat opquast</h1>
+                    <img src="{{ asset('images/certificats/opquast.jpg') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                </div>
+            </aside>
+            <h2 class="certificat__subtitle">certificats openclassrooms</h2>
+
+            <div class="certificat__open">
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Adoptez_les_APIREST_pour_vos_projets_web.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal3" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal3" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Apprenez à apprendre</h1>
+                        <img src="{{ asset('images/certificats/png/Adoptez_les_APIREST_pour_vos_projets_web.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Adoptez_une_architecture_MVC_en_PHP.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal4" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal4" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Comprendre le web</h1>
+                        <img src="{{ asset('images/certificats/png/Adoptez_une_architecture_MVC_en_PHP.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Apprenez_à_apprendre.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal5" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal5" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Découvrez le fonctionnement des algorithmes</h1>
+                        <img src="{{ asset('images/certificats/png/Apprenez_à_apprendre.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Apprenez_à_créer_votre_site_web_avec_HTML5_et_CSS3.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal6" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal6" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Apprenez à créer votre site web avec HTML5 et CSS3</h1>
+                        <img src="{{ asset('images/certificats/png/Apprenez_à_créer_votre_site_web_avec_HTML5_et_CSS3.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Apprenez_à_programmer_avec_JavaScript.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal7" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal7" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Concevez votre site web avec PHP et MySQL</h1>
+                        <img src="{{ asset('images/certificats/png/Apprenez_à_programmer_avec_JavaScript.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Comprendre_le_Web.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal8" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal8" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Programmez en orienté objet en PHP</h1>
+                        <img src="{{ asset('images/certificats/png/Comprendre_le_Web.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Concevez_votre_site_web_avec_PHP_et_MySQL.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal9" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal9" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Adoptez une architecture MVC en PHP</h1>
+                        <img src="{{ asset('images/certificats/png/Concevez_votre_site_web_avec_PHP_et_MySQL.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+                    
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Construisez_une_APIREST_avec_Symfony.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal10" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal10" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Adoptez les APIREST pour vos projets web</h1>
+                        <img src="{{ asset('images/certificats/png/Construisez_une_APIREST_avec_Symfony.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Créez_des_animations_CSS_modernes.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal11" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal11" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Apprenez à programmer avec JavaScript</h1>
+                        <img src="{{ asset('images/certificats/png/Créez_des_animations_CSS_modernes.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Créez_un_site_moderne_et_professionnel_avec_WordPress_5.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal12" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal12" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Construisez une API REST avec Symfony</h1>
+                        <img src="{{ asset('images/certificats/png/Créez_un_site_moderne_et_professionnel_avec_WordPress_5.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Créez_une_application_React_complète.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal13" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal13" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Débutez avec React</h1>
+                        <img src="{{ asset('images/certificats/png/Créez_une_application_React_complète.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Débutez_avec_React.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal14" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal14" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Développez une application mobile React Native</h1>
+                        <img src="{{ asset('images/certificats/png/Débutez_avec_React.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Débutez_la_programmation_avec_Java.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal15" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal15" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Créez un site moderne et professionnel avec WordPress5</h1>
+                        <img src="{{ asset('images/certificats/png/Débutez_la_programmation_avec_Java.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Découpez_et_intégrez_une_maquette.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal16" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal16" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Mettez en place un système de veille informationnelle</h1>
+                        <img src="{{ asset('images/certificats/png/Découpez_et_intégrez_une_maquette.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Découvrez_le_fonctionnement_des_algorithmes.png') }}" alt="Cetificat openclassroomst" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal17" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal17" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Réalisez une application web avec ReactJs</h1>
+                        <img src="{{ asset('images/certificats/png/Découvrez_le_fonctionnement_des_algorithmes.png') }}" alt="Cetificat openclassroomsl" class="certificat__img">
+                    </div>
+                </aside>
+                
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Démarrez_votre_projet_avec_Java.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal18" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal18" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Modélisez et implémentez une base de données relationnelle avec UML</h1>
+                        <img src="{{ asset('images/certificats/png/Démarrez_votre_projet_avec_Java.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Développez_une_application_mobile_React_Native.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal19" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal19" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Lancez votre activité de freelance</h1>
+                        <img src="{{ asset('images/certificats/png/Développez_une_application_mobile_React_Native.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Développez_votre_première_application_Android.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal20" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal20" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Lancez votre activité de freelance</h1>
+                        <img src="{{ asset('images/certificats/png/Développez_votre_première_application_Android.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Développez_votre_site_web_avec_le_framework_Symfony.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal21" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal21" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Lancez votre activité de freelance</h1>
+                        <img src="{{ asset('images/certificats/png/Développez_votre_site_web_avec_le_framework_Symfony.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Installez_votre_environnement_de_développement_Java_avec_Eclipse.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal22" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal22" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Lancez votre activité de freelance</h1>
+                        <img src="{{ asset('images/certificats/png/Installez_votre_environnement_de_développement_Java_avec_Eclipse.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Lancez_votre_activité_de_freelance.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal23" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal23" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Lancez votre activité de freelance</h1>
+                        <img src="{{ asset('images/certificats/png/Lancez_votre_activité_de_freelance.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Mettez_en_place_un_système_de_veille_informationnelle.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal24" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal24" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Lancez votre activité de freelance</h1>
+                        <img src="{{ asset('images/certificats/png/Mettez_en_place_un_système_de_veille_informationnelle.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Modélisez_et_implémentez_une_base_de_données_relationnelle_avec_UML.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal25" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal25" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Lancez votre activité de freelance</h1>
+                        <img src="{{ asset('images/certificats/png/Modélisez_et_implémentez_une_base_de_données_relationnelle_avec_UML.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Programmez_en_orienté_objet_en_PHP.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal26" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal26" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Lancez votre activité de freelance</h1>
+                        <img src="{{ asset('images/certificats/png/Programmez_en_orienté_objet_en_PHP.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+                <div class="certificat__card">
+                    <img src="{{ asset('images/certificats/png/Réalisez_une_application_web_avec_ReactJs.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    <button class="certificat__button"><a href="#modal27" class="js-modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelby="titlemodal" title="ouvrir modal">Agrandir</a></button>
+                </div>
+                <aside id="modal27" class="modal" style="display:none;">
+                    <div class="modal-wrapper js-modal-stop">
+                    <button class="js-modal-close">Fermer</button>
+                        <h1 id="titlemodal">Lancez votre activité de freelance</h1>
+                        <img src="{{ asset('images/certificats/png/Réalisez_une_application_web_avec_ReactJs.png') }}" alt="Cetificat openclassrooms" class="certificat__img">
+                    </div>
+                </aside>
+
+            </div>                
+        </section>
+        <section class="certificats__links">
+            <a href="{{ path('cv_list') }}" class="certificats__link" title="lien interne vers la page cv">Retour à la page cv</a>
+            <a href="{{ path('homepage') }}" class="certificats__link" title="lien interne vers la page d'accueil">Retour à la page d'accueil</a>
+        </section>
+    </main>
+{% endblock %}

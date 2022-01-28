@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Politique de confidentialité{% endblock %}
+
+{% block body %}
+<main class="confidentiality">
+    <h1 class="confidentiality__title">Politique de confidentialité</h1>
+    <p class="confidentiality__text">
+        J’accorde une importance toute particulière au droit
+        à la vie privée des internautes et m’engage à protéger 
+        leurs données personnelles selon la législation française 
+        et européenne en vigueur.
+    </p>
+    <p class="confidentiality__text">
+        La présente politique de confidentialité, expose mes pratiques 
+        concernant les informations que je peux collecter sur le Site 
+        et leur utilisation.
+    </p>
+    <p class="confidentiality__text">
+        Je collecte et conserve certaines données à caractère personnel vous 
+        concernant (c’est-à-dire les informations qui permettent de vous identifier 
+        directement ou indirectement) , et ce, uniquement lorsque vous les communiquez 
+        volontairement sur mon site, quand vous souhaitez me contacter, me faire part de
+        vos commentaires ou me transmettre vos questions.
+    </p>
+    <p class="confidentiality__text">
+        Ces données sont conservées uniquement dans le but de pouvoir vous recontactez, elles
+        ne sont jamais transmise, ni sur un autre site, ni sur aucun réseaux sociaux. Vous pouvez
+        demander la suppression de celle-ci à tout moment.
+    </p>
+
+    <p class="confidentiality__text">
+        En utilisant mon Site, vous acceptez les termes de la présente 
+        Politique. Si vous les refusez , je vous invite à ne pas utiliser 
+        mon Site ou à ne pas me transmettre d’information à caractère personnel.
+    </p>
+
+    <p class="confidentiality__text">
+        J’agis en qualité de Responsable de traitement à l’égard des 
+        données personnelles collectées sur le Site :
+    </p>
+    <ul class="confidentiality__contact">
+        <li class="confidentiality__contact__text__name">Frédéric CAFFIER</li>
+        <li class="confidentiality__contact__text">5, place de l'église</li>
+        <li class="confidentiality__contact__text">78490 Galluis</li>
+        <li class="confidentiality__contact__text">06 19 84 74 29</li>
+        <li class="confidentiality__contact__text">frederic.caffier@hotmail.com</li>
+    </ul>
+    <section class="confidentiality__links">
+        <a href="{{ path('homepage') }}" class="confidentiality__link"> Retour à la page d'accueil</a>
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,539 @@
+@use './vars';
+
+@media screen and (max-width: 1000px) {
+    .home {
+        &__title {
+            &__name {
+                left: -67px;
+            }
+            &__job {
+                left: 71px;
+            }
+        }
+        &__accueil {
+            &__img {
+                left: 0;
+                max-width: 850px;
+                left: calc(50% - 423px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .home {
+        &__title {
+            &__name {
+                left: -19px;
+            }
+            &__job {
+                left: 19px;
+                top: 603px;
+            }
+        }
+        &__accueil {
+            &__img {
+                left: 0;
+                max-width: 750px;
+                height: 570px;
+                left: calc(50% - 375px);
+            }
+        }
+        &__competence {
+            flex-direction: column;
+            &__table {
+                display: initial;
+                margin: 0 auto;
+                &__langages {
+                    height: auto;
+                    width: auto;
+                    margin: 0 auto;
+                    margin-bottom: 50px;
+                }
+                &__framework {
+                    height: auto;
+                    width: auto;
+                    margin: 0 auto;
+                }
+            }
+            &__other {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                &__contents {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                &__subtitle {
+                    font-family: Parisienne;
+                    display: inline-block;
+                    letter-spacing: .15em;
+                    padding: 10px;
+                    font-size: 2.5em;
+                    margin: 10px;
+                    font-weight: 500;
+                    color: blue;
+                }
+                &__content {
+                    letter-spacing: .1em;
+                    font-size: 1.2em;
+                    margin: 8px;
+                }
+                &__list {
+                    list-style-type: none;
+                    margin-bottom: 40px;
+                    &__content {
+                        font-size: 1.2em;
+                        letter-spacing: .1em;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    .home {
+        &__title {
+            &__name {
+                display: inline-block;
+                width: 100%;
+                top: 70px;
+                left: 0;
+            }
+            &__job {
+                display: inline-block;
+                width: 100%;
+                top: 537px;
+                left: 0;
+                width: 100%;
+            }
+        }
+        &__accueil {
+            &__img {
+                left: 0;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .header {
+        border-bottom: 1px solid white;
+        &__img {
+            // float: right;
+            position: absolute;
+            right: 10px;
+        }
+    }
+
+    .header__nav {
+        transform: translateX(-250px);
+        display: initial;
+        position: absolute;
+        top: 90px;
+        height: 100vh;
+        transition-duration: .6s;
+        width: 250px;
+        &__link {
+            display: block;
+            line-height: 40px;
+            border-bottom: 1px solid white;
+            text-align: center;
+            color: white;
+            border-radius: 0;
+        }
+    }
+
+    .header__icon {
+        position: relative;
+        display: block;
+        float: left;
+        width: 50px;
+        height: 50px;
+        transition-duration: 1s;
+        // transform: rotate(90deg);
+        // background-color: #ff0000;
+
+        cursor: pointer;
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 30px;
+            height: 0;
+            top: 10px;
+            left: 20px;
+            // left: 15px;
+            box-shadow: 0 10px 0 1.3px red, 0 16px 0 1.3px red, 0 22px 0 1.3px red;
+        }
+    }
+
+    .contact {
+        &__img {
+            top: 110px;
+            right: 0px;
+        }
+    }
+
+    .footer {
+        flex-direction: column;
+        &__link {
+            text-align: center;
+            display: block;
+        }
+    }
+
+    .with--sidebar {
+        transition-duration: .6s;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        overflow: hidden;
+        .home, .footer, .cv , .certificats {
+            transform: translateX(250px);
+            transition-duration: .6s;
+            background-color: rgba($color: #000000, $alpha: 0.6);
+            cursor: pointer;
+            opacity: 40%;
+        }
+        .header {
+            background-color: darken(vars.$bg, 5);
+            &__nav {
+                transform: translateX(0);
+                transition-duration: .6s;
+                background-color: darken(vars.$bg, 5);
+                opacity: 100%;
+            }
+        }
+        .cv {
+            opacity: 40%;
+        }
+        .home {
+            &__accueil {
+                &__img {
+                    opacity: 40%;
+                }
+            }
+            &__competence {
+                &__table {
+                    opacity: 40%;
+                }
+            }
+            &__portfolio {
+                &__project {
+                    &__card {
+                        opacity: 40%;
+                    }
+                }
+            }
+        }
+    }
+
+    .project-page {
+        &__title {
+            font-size: 2em;
+        }
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .home {
+        &__title {
+            &__job {
+                top: 508px;
+            }
+        }
+        &__contact {
+            &__form {
+                &__name {
+                    flex-direction: column;
+                }
+            }
+            &__coord {
+                padding: 20px;
+                margin-bottom: 20px;
+                margin-left: 80px;
+            }
+        }
+    }
+
+    .cv {
+        &__button {
+            &__link {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .home {
+        &__title {
+            &__job {
+                top: 448px;
+            }
+        }
+        &__competence {
+            &__other {
+                &__contents {
+                }
+                &__subtitle {
+                    font-size: 2em
+                }
+            }
+        }
+    }
+    .cv {
+        &__buttons {
+            flex-direction: column;
+        }
+        &__button {
+            margin: 10px 80px;
+            padding: 5px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .home {
+        &__title {
+            font-size: 1.3em;
+            &__job {
+                top: 382px;
+            }
+        }
+        &__competence {
+            &__table {
+                &__langages {
+                    &__title {
+                        font-size: 1.1em;
+                    }
+                    &__name {
+                        font-size: 1em;
+                    }
+                }
+                &__framework {
+                    &__title {
+                        font-size: 1.1em;
+                    }
+                }
+            }
+            &__other {
+                &__subtitle {
+                    font-size: 1.8em;
+                }
+            }
+        }
+        &__contact {
+            &__form {
+                &__input {
+                    font-size: 1em;
+                }
+                &__authorize {
+                    & div {
+                        display: flex;
+                        & label {
+                            font-size: 1em;
+                        }
+                    }
+                    &__text {
+                        font-size: 1em;
+                    }
+                }
+            }
+            &__coord {
+                margin-left: 10px;
+                &__name {
+                    font-size: 1em;
+                }
+                &__adress {
+                    font-size: 1em;
+                }
+                &__city {
+                    font-size: 1em;
+                    margin-left: 32px;
+                }
+                &__text {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+    .progress {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .home {
+        &__contact {
+            &__coord {
+                &__text {}
+                &__city {
+                    margin-left: 21px;
+                }
+            }
+        }
+    }
+    .la-id-card {
+        left: -10px;
+    }
+    .la-home {
+        left: -10px;
+    }
+    .la-at {
+        left: -10px;
+    }
+    .la-phone {
+        left: -10px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .home {
+        &__title {
+            &__job {
+                top: 329px;
+            }
+        }
+        &__competence {
+            &__other {
+                &__subtitle {
+                    font-size: 1.5em;
+                }
+                &__content {
+                    letter-spacing: .1em;
+                    font-size: 1em;
+                    margin: 8px;
+                }
+                &__list {
+                    list-style-type: none;
+                    // margin-bottom: 40px;
+                    padding: 0;
+                    &__content {
+                        font-size: 1em;
+                        &::before {
+                            content: '➣';
+                            position: relative;
+                            margin-right: 10px;
+                            color: blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home {
+        top: 160px;
+        &__title {
+            &__job {
+                top: 300px;
+            }
+        }
+        &__competence {
+            &__table {
+                &__langages {
+                    &__title {
+                        font-size: 1em;
+                    }
+                    &__name {
+                        font-size: 1em;
+                    }
+                }
+                &__framework {
+                    &__title {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+        &__contact {
+            &__form {
+                &__name {
+                }
+            }
+            &__coord {
+                margin-left: -10px;
+                width: 100%;
+                padding: 5px;
+            }
+        }
+    }
+    .progress {
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .progress {
+        max-width: 120px;
+    }
+    .cv {
+        &__button {
+            display: inline-block;
+            width: auto;
+            &__link {
+                font-size: .8em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .home {
+        &__title {
+            font-size: 1.1em;
+            &__job {
+                top: 270px;
+            }
+        }
+        &__competence {
+            &__table {
+                &__langages {
+                    &__title {
+                        font-size: 1em;
+                    }
+                    &__name {
+                        font-size: .8em;
+                    }
+                }
+                &__framework {
+                    &__title {
+                        font-size: .8em;
+                    }
+                }
+            }
+        }
+        .cv {
+            &__button {
+                &__link {
+                    font-size: .7em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .home {
+        &__title {
+            font-size: 1em;
+            &__job {
+                top: 230px;
+            }
+        }
+    }
+}

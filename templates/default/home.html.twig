@@ -1,0 +1,346 @@
+{% extends 'base.html.twig' %}
+
+    {% block url %}
+        <link rel="canonical" href="https://frederic-caffier.fr/" />
+    {% endblock %}
+
+    {% block metaTag %}
+        <meta name="description" content="portfolio de Frédéric CAFFIER développeur web junior">
+    {% endblock %}
+
+{% block title %}Page d'accueil du portfolio développeur web junior frederic caffier{% endblock %}
+
+{% block body %}
+    <main class="home">
+        <section class="home__accueil">
+            <img src="{{ asset('images/profil/profil.jpg') }}" alt="" class="home__accueil__img">
+            <h1 class="home__title">
+                <span class="home__title__name">Frédéric caffier</span>
+                <span class="home__title__job">Développeur web</span>
+            </h1>
+        </section>
+        <h2 class="home__subtitle" id="profil">Présentation</h2>
+        <section class="home__profile">
+            <h3 class="home__profile__title"> Bonjour et bienvenue sur mon portfolio.</h3>
+            <div class="home__profile__content">
+                <p class="home__profile__content__text">
+                    Moi, c'est Frédéric, après avoir travailler pendant 10 ans en tant que conseiller de vente cariste,
+                    j'ai décidé de changer de voie et de me reconvertir professionnellement. Etant depuis toujours passionné
+                    d'informatique, j'ai trouvé ma voix dans la programmation et le développpement web.
+                </p>
+                <p class="home__profile__content__text">
+                    J'ai d'abord commencer mon apprentissage en autodidacte via la plateforme OpenClassrooms. J'ai ensuite suivie une 
+                    formation intensive de 6 mois au sein de l'école de Oclock. Ce qui m'a permis de découvrir touts les aspects
+                    du métier de développeur web, de me construire des bases solides ainsi que la bonne méthodologie pour pouvoir
+                    continuer de progresser. A l'issue de celle-ci j'ai obtenue le titre professionnel "développeur web et web mobile" (bac +2)
+                    ainsi que la certification Opquast. Puis j'ai rejoint l'école supérieure des technologies créatives de Doranco 
+                    pour une formation de 8 mois dans le but de poursuivre mon apprentissage et d'obtenir le titre professionnel 
+                    "concepteur développeur d'appliaction" (bac +3 / +4).
+                </p>
+                <p class="home__profile__content__text">
+                    Sinon à part ça, dans la vie j'aime la musique, les jeux vidéo, les nouvelles technologies, la détection, 
+                    la pêche à l'aimant, faire des randonnées, les animaux ...
+                </p>
+                <p class="home__profile__content__text">
+                    Je reste à l'écoute de toute opportunités en développement de site et application web. Je suis particulièrement 
+                    intéressé par le développement en langage PHP, Javascript et le framework de symfony.
+                </p>
+            </div>
+            <h3 class="home__profile__title">Bonne visite</h3>
+        </section>
+
+        <h2 class="home__subtitle" id="competence">Compétences</h2>
+        <section class="home__competence reveal-2">
+            <div class="home__competence__table">
+                <table class="home__competence__table__langages">
+                    <caption class="home__competence__table__langages__title">Langages web et cms</caption>
+                    <tr>
+                        <td class="home__competence__table__langages__name" >Html</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progressBar value v-54" data-progress="0%" data-value="87"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="home__competence__table__langages__name">Css</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progressBar value v-54" data-progress="0%" data-value="84"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="home__competence__table__langages__name">Sass</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progressBar value v-54" data-progress="0%" data-value="70"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="home__competence__table__langages__name">Php</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progressBar value v-54" data-progress="0%" data-value="83"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="home__competence__table__langages__name">Javascript</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progressBar value v-54" data-progress="0%" data-value="72"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="home__competence__table__langages__name">Mysql</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progressBar value v-54" data-progress="0%" data-value="74"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="home__competence__table__langages__name">Wordpress</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progressBar value v-54" data-progress="0%" data-value="55"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="home__competence__table__langages__name">Shopify</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progressBar value v-54" data-progress="0%" data-value="45"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table class="home__competence__table__framework">
+                    <caption class="home__competence__table__framework__title">Framework et librairies</caption>
+                    <tr>
+                        <td class="home__competence__table__framework__name">Bootstrap</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progressBar value v-54" data-progress="0%" data-value="70"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="home__competence__table__framework__name">Symfony</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progressBar value v-54" data-progress="0%" data-value="85"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="home__competence__table__framework__name">Reactjs</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progressBar value v-54" data-progress="0%" data-value="72"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="home__competence__table__framework__name">React-native</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progressBar value v-54" data-progress="0%" data-value="62"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="home__competence__table__framework__name">NodeJs</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progressBar value v-54" data-progress="0%" data-value="67"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="home__competence__table__framework__name">Laravel</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progressBar value v-54" data-progress="0%" data-value="65"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="home__competence__table__framework__name">Jquery</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progressBar value v-54" data-progress="0%" data-value="70"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="home__competence__other">
+                
+                <div class="home__competence__other__contents">
+                    <h3 class="home__competence__other__subtitle">Systémes d'exploitation</h3>
+                    <p class="home__competence__other__content">Windows | Linux</p>
+                </div>
+                
+                <div class="home__competence__other__contents">
+                    <h3 class="home__competence__other__subtitle">Le versionning</h3>
+                    <p class="home__competence__other__content">Git | Github</p>
+                </div>
+
+                <div class="home__competence__other__contents">
+                    <h3 class="home__competence__other__subtitle">La gestions de projets</h3>
+                    <ul class="home__competence__other__list">
+                        <li class="home__competence__other__list__content">Rédaction cahier des charges</li>
+                        <li class="home__competence__other__list__content">Création de logo</li>
+                        <li class="home__competence__other__list__content">Réalisation de wireframes</li>
+                        <li class="home__competence__other__list__content">Création MCD</li>
+                        <li class="home__competence__other__list__content">Création de users stories</li>
+                        <li class="home__competence__other__list__content">Modélisation des données avec les méthodes RUP et UML</li>
+                        <li class="home__competence__other__list__content">Design Pattern</li>
+                        <li class="home__competence__other__list__content">Gestion base de données MYSQL - MongoDb - GraphQl</li>
+                        <li class="home__competence__other__list__content">Documentations</li>
+                        <li class="home__competence__other__list__content">Création d'API-REST</li>
+                        <li class="home__competence__other__list__content">Responsive design | Media queries</li>
+                        <li class="home__competence__other__list__content">Expériences UI/UX</li>
+                        <li class="home__competence__other__list__content">Réferencement naturelle SEO</li>
+                        <li class="home__competence__other__list__content">Mise en production avec AWS | Ionos</li>
+                    </ul>
+                </div>
+                
+                <div class="home__competence__other__contents">
+                    <h3 class="home__competence__other__subtitle">Les outils</h3>
+                    <ul class="home__competence__other__list">
+                        <li class="home__competence__other__list__content">Visual Studio Code</li>
+                        <li class="home__competence__other__list__content">Insomnia | postman</li>
+                        <li class="home__competence__other__list__content">Trello</li>
+                        <li class="home__competence__other__list__content">Mocodo</li>
+                        <li class="home__competence__other__list__content">whimsical</li>
+                        <li class="home__competence__other__list__content">Gimp</li>
+                    </ul>
+                    <h3 class="home__competence__other__subtitle">Méthodologie de travail</h3>
+                    <p class="home__competence__other__content">Agile | Scrum</p>
+                </div>
+
+            </div>
+        </section>
+
+        <button class="home__competence__button"><a href="{{ path('cv_list') }}" title="lien interne vers la page cv" class="home__competence__button__link">Voir cv</a></button>
+        <h2 class="home__subtitle" id="project">Projets</h2>
+        
+        <section class="home__portfolio">
+            <div class="home__portfolio__project">
+                <article class="home__portfolio__project__card">
+                    <div class="home__portfolio__project__card__front1">
+                        <div class="home__portfolio__project__img"></div>
+                    </div>
+                    <div class="home__portfolio__project__card__back">
+                        <h3 class="home__portfolio__project__name">Oskool</h3>
+                        <p class="home__portfolio__project__description">
+                            Projet de fin de formation Oclock réalisé en équipe de 5 étudiants avec la méthodologie agile,
+                            permettant la mise en relation entre parents d'élèves et professeurs, avec un agenda et un 
+                            carnet de liaison numérique, servant également de suivi pédagogique, où les professeurs 
+                            remplissent leur tableau de bord consultable par les parents. <br/>
+                            <strong>Backend :</strong> Api réaliser en symfony et d'apiplatform. <br />
+                            <strong>Frontend :</strong> Le front à été réaliser en ReactJs. 
+                        </p>
+                        <p class="home__portfolio__project__info">Actuellement ce site n'est plus en ligne.</p>
+                    </div>
+                </article>
+                <article class="home__portfolio__project__card">
+                    <div class="home__portfolio__project__card__front2">
+                        <div class="home__portfolio__project__img"></div>
+                    </div>
+                    <div class="home__portfolio__project__card__back">
+                        <h3 class="home__portfolio__project__name">Tv Show</h3>
+                        <p class="home__portfolio__project__description">
+                            Site permettant de forunir des informations sur les séries télé, comme le nombre de saison,
+                            d'épisodes pour chaque saison ainsi que leur nom et leur durée, le nom des acteurs principaux etc... <br /> <br />
+                            Ce projet à été réaliser durant mon apprentissage du framework de symfony, dans le cadre 
+                            de la formation OClock. 
+                        </p>
+                        <a href="https://tv-show.frederic-caffier.fr/" title="lien vers la page d'accueil de tvshow" class="home__portfolio__project__link">Voir le site</a>
+                    </div>
+                </article>
+                <article class="home__portfolio__project__card">
+                    <div class="home__portfolio__project__card__front3">
+                        <div class="home__portfolio__project__img"></div>
+                    </div>
+                    <div class="home__portfolio__project__card__back">
+                        <h3 class="home__portfolio__project__name">Convertisseur de salaire brut en net</h3>
+                        <p class="home__portfolio__project__description">
+                            Petite application permettant de convertir son salaire (annuel, mensuel, journalier ou horraire) brut en net, ou inversement en 
+                            fonction de son statut (salarié, cadre, fonctionnaire ...) . <br /> <br />
+                            Ce projet à été réaliser en HTML, CSS et JAVASCRIPT.
+                        </p>
+                        <a href="https://convertisseur-salaire.frederic-caffier.fr/" title="lien vers la page d'accueil de l'application convertisseur de salaire" class="home__portfolio__project__link">Voir le site</a>
+                    </div>
+                </article>
+                <article class="home__portfolio__project__card">
+                    <div class="home__portfolio__project__card__front4">
+                        <div class="home__portfolio__project__img"></div>
+                    </div>
+                    <div class="home__portfolio__project__card__back">
+                        <h3 class="home__portfolio__project__name">City</h3>
+                        <p class="home__portfolio__project__description">
+                            Integration d'une page HTML à partir d'une maquette, exercice réaliser dans le cadre de la 
+                            formation Doranco afin de se perfectionner au responsive. <br /> <br />
+                            Ce projet à été réaliser en HTML, CSS.
+                        </p>
+                        <a href="https://integration.frederic-caffier.fr/" title="lien vers la page d'accueil du projet city" class="home__portfolio__project__link">Voir le site</a>
+                    </div>
+                </artic>
+            </div>
+        </section>
+
+        <h2 class="home__subtitle" id="contact">Me contacter</h2>
+        <section class="home__contact reveal-">
+            <p class="home__contact__error">
+                {% for label, messages in app.flashes %}
+                    {% for message in messages %}
+                        <div id="alert" class="alert alert-{{ label }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+                
+            </p>
+            <div class="home__contact__form">
+                {{ form_start(form) }}
+                {{ form_row(form.object) }}
+                <div class="home__contact__form__name">
+                    {{ form_row(form.firstname) }}
+                    {{ form_row(form.lastname) }}
+                </div>
+                {{ form_row(form.email) }}
+                {{ form_row(form.message) }}
+                <div class="home__contact__form__authorize">
+                    {{ form_row(form.agreeTerms, { 'attr': {'class': 'home__contact__form__authorize'} }) }}
+                    <p class="home__contact__form__authorize__text">
+                        Pour connaître et exercer vos droits, veuillez consultez la
+                        <a href="{{ path('confidentiality') }}" class="home__contact__form__authorize__link">Politique de confidentialité.</a>
+                    </p>
+                </div>
+                <button class="home__contact__form__button">Envoyer</button>
+                {{ form_end(form) }}
+                <div class="home__contact__coord">
+                    <p class="home__contact__coord__name"><i class="las la-id-card la-lg"></i> Frédéric Caffier</p>
+                    <p class="home__contact__coord__adress"><i class="las la-home la-lg"></i> 5 place de l'église,</p>
+                    <p class="home__contact__coord__city">78490 Galluis</p>
+                    <p class="home__contact__coord__text"><i class="las la-phone la-lg"></i> 06 19 84 74 29</p>
+                    <p class="home__contact__coord__text"><i class="las la-at la-lg"></i> frederic.caffier@hotmail.com</p>
+                </div>
+                <div class="home__contact__form__reseau">
+                    <a href="https://www.linkedin.com/in/frederic-caffier" class="home__contact__link"><i class="lab la-linkedin la-3x"></i></a>
+                    <a href="https://github.com/Pilou4" class="home__contact__link"><i class="lab la-github la-3x"></i></a>
+                    <a href="https://twitter.com/CaffierFred" class="home__contact__link"><i class="lab la-twitter la-3x"></i></a>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+{% endblock %}

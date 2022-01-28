@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block url %}
+    <link rel="canonical" href="https://frederic-caffier.fr/cv/list" />
+{% endblock %}
+
+{% block metaTag %}
+    <meta name="description" content="Cv de Frédéric Caffier portfolio développeur web junior">
+{% endblock %}
+
+{% block title %}CV{% endblock %}
+
+{% block body %}
+    <section class="cv">
+        <div id="cv">
+            <img class="cv__gif" src={{ asset('images/loader/loader.gif') }} alt="loader"/>
+        </div>
+        <div class="cv__buttons">
+            <button class="cv__button"><a href="{{ path('cv_download') }}" title="lien permettant de técharger le cv" class="cv__button__link">Télécharger cv</a></button>
+            <button class="cv__button"><a href="{{ path('cv_certificat') }}" title="lien internevers la pages certificats" class="cv__button__link">Voir certificats et diplômes</a></button>
+        </div>
+    </section>
+{% endblock %}

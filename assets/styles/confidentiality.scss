@@ -1,0 +1,121 @@
+@use './vars';
+
+.confidentiality {
+    position: relative;
+    top: 90px;
+    min-height: 91vh;
+    padding: 50px;
+    margin-bottom: 100px;
+    &__title {
+        font-family: Parisienne;
+        font-size: 2.5em;
+        letter-spacing: .15em;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+    &__text {
+        padding: 5px;
+        letter-spacing: .1em;
+        font-size: 1.2em;
+    }
+    &__contact {
+        list-style-type: none;
+        margin: 50px;
+        &__text {
+            letter-spacing: .1em;
+            font-size: 1.2em;
+            &__name {
+                letter-spacing: .1em;
+                font-size: 1.2em;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &__links{
+        margin-top: 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__link {
+        display: block;
+        margin-top: 30px;
+        font-size: 1.2em;
+        letter-spacing: .1em;
+        color: blue;
+        text-decoration: underline;
+    }
+}
+
+/* ---- PAGE MENTIONS LEGALES ---- */
+
+.mention {
+    position: relative;
+    top: 90px;
+    min-height: 91vh;
+    padding: 50px;
+    margin-bottom: 100px;
+    &__title {
+        font-family: Parisienne;
+        font-size: 2.5em;
+        letter-spacing: .15em;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+    &__subtitle {
+        text-transform: uppercase;
+        letter-spacing: .1em;
+    }
+    &__text {
+        padding: 20px;
+        letter-spacing: .1em;
+        font-size: 1.2em;
+    }
+    &__contact {
+        list-style-type: none;
+        margin: 50px;
+        &__text {
+            letter-spacing: .1em;
+            font-size: 1.2em;
+            &__name {
+                letter-spacing: .1em;
+                font-size: 1.2em;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &__links{
+        margin-top: 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__link {
+        display: block;
+        margin-top: 30px;
+        font-size: 1.2em;
+        color: blue;
+        text-decoration: underline;
+        letter-spacing: .1em;
+    }
+}
+
+.plan {
+    position: relative;
+    top: 90px;
+    min-height: 91vh;
+    padding: 50px;
+    margin-bottom: 100px;
+    &__title {
+        font-family: Parisienne;
+        font-size: 2.5em;
+        letter-spacing: .15em;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+    &__link {
+        color: blue;
+        font-size: 1.2em;
+        text-decoration: underline;
+    }
+}
