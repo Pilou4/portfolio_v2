@@ -18,6 +18,9 @@
             left: -104px;
             background-color: white;
             padding: 10px;
+            opacity: 0;
+            // transition: all 1s ease-out;
+            animation: visibleTitle 5s forwards;
         }
         &__job {
             position: relative;
@@ -25,6 +28,9 @@
             left: 124px;
             background-color: white;
             padding: 10px;
+            opacity: 0;
+            // transition: all 1s ease-out;
+            animation: visibleTitle 5s forwards;
         }
     }
     &__subtitle {
@@ -42,7 +48,7 @@
     &__accueil {
         min-height: 90vh;
         // transition: all 1s ease-out;
-        animation: visible 2.5s ease-in-out;
+        
         &__img {
             position: absolute;
             display: block;
@@ -52,6 +58,7 @@
             top: 90px;
             left: calc(50% - 460px);
             // top: calc(50% - 400px);
+            animation: visible 2.5s ease-in-out;
         }
     }
     &__profile {
@@ -69,7 +76,6 @@
             &__text {
                 font-size: 1.2em;
                 letter-spacing: .1em;
-                text-align: justify;
             }
         }
     }
@@ -97,7 +103,6 @@
                 }
                 &__name {
                     letter-spacing: .2em;
-                    text-align: justify;
                     text-transform: uppercase;
                 }
             }
@@ -116,7 +121,6 @@
                 }
                 &__name {
                     letter-spacing: .2em;
-                    text-align: justify;
                     text-transform: uppercase;
                 }
             }

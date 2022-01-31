@@ -87,7 +87,7 @@ const progressBarCompetence = () => {
             if (pourcent === valueStop) {
                 clearInterval(timer);
             }
-        }, 20)
+        }, 50)
     })
 }
 
@@ -172,11 +172,7 @@ window.addEventListener('keydown', function (e) {
 
 // Animation au scroll apparition des éléments
 let logo = document.getElementById('logo-contact');
-let alert = document.getElementById('alert');
 
-if (alert) {
-    logo.style.top = '200px';
-}
 const ratio = .1
 const options = {
     root: null,

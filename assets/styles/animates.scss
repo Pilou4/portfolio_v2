@@ -23,6 +23,19 @@
     }
 }
 
+@keyframes visibleTitle {
+    0% {
+        opacity: 0;
+        display: block;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* ---- ANIMATION AU SCROLL POUR APPARITION DES ELEMENTS ----*/
 [class*="reveal-"] {
     opacity: 0;
