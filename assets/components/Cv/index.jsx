@@ -90,7 +90,6 @@ const ref = React.createRef();
                     <div className="cv2__profil__right__header">
                         <h1 className="cv2__profil__right__name">Frédéric CAFFIER</h1>
                         <h2 className="cv2__profil__right__title">Développeur web</h2>
-                        <h2 className="cv2__profil__right__text">A la recherche d'un stage pour la période du 3 janvier au 11 février 2022 </h2>
                     </div>
                     <h3 className="cv2__profil__right__subtitle"><i className="las la-book la-lg"></i>Experiences</h3>
                     <h3 className="cv2__profil__right__date">Septembre 2020 - Oclock - Création de projet</h3>
@@ -131,7 +130,7 @@ const ref = React.createRef();
                             <li className="cv2__profil__right__list__pro">Cuisine, Service</li>
                         </ul>
                     <h3 className="cv2__profil__right__subtitle__form"><i className="las la-graduation-cap la-lg"></i>Formations</h3>
-                    <h4 className="cv2__profil__right__date">Depuis juin 2021 - École Doranco - Concepteur développeur d'application</h4>
+                    <h4 className="cv2__profil__right__date">Juin 2021 à Février 2022 - École Doranco - Concepteur développeur d'application</h4>
                     <ul className="cv2__profil__right__list">
                         <li className="cv2__profil__right__list__form">Formalisation et modélisation avec les méthode RUP et UML</li>
                         <li className="cv2__profil__right__list__form">CSharp/C#.Net, Dotnet, Ado.net, Asp.net Soap et rest en .net</li>
@@ -149,7 +148,7 @@ const ref = React.createRef();
                         </ul>
                     <h4 className="cv2__profil__right__date">Depuis Janvier 2019 - Formation Openclassrooms</h4>
                     <ul className="cv2__profil__right__list">
-                        <li className="cv2__profil__right__list__form">17 certifications obtenues au métier de développeur web</li>
+                        <li className="cv2__profil__right__list__form">Plusieurs certifications obtenues au métier de développeur web</li>
                     </ul>
                 </div>
             </div>

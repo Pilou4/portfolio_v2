@@ -21,6 +21,7 @@ a:active { color: red; }         Liens actifs */
 
 html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
     // background-color: vars.$bgLight;
 }
 
@@ -51,7 +52,10 @@ h1 {
         padding: 10px;
         border-radius: 50%;
         float: left;
-        
+        transition: all 1s ease-out;
+        &:hover {
+            transform: rotateY(360deg);
+        }
     }
     &__nav {
         float: left;

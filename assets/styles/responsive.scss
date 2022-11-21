@@ -125,9 +125,8 @@
     .header {
         border-bottom: 1px solid white;
         &__img {
-            // float: right;
-            position: absolute;
-            right: 10px;
+            display: block;
+            margin: 0 auto;
         }
     }
 
